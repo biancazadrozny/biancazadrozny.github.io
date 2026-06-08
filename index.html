@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Web Page</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --text-muted: #666666;
+            --link-color: #0066cc;
+            --link-hover: #004499;
+            --border-color: #efefef;
+            --sidebar-width: 260px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+        }
+
+        /* Container Layout */
+        .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            width: var(--sidebar-width);
+            position: fixed;
+            height: 100vh;
+            padding: 40px 30px;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .brand h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        .brand p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: var(--link-color);
+        }
+
+        .sidebar-footer {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Main Content Area */
+        main {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 40px 60px;
+            max-width: 800px;
+        }
+
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:first-of-type {
+            padding-top: 0;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #111;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section Custom Grid */
+        .about-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: auto;
+            border-radius: 4px;
+            filter: grayscale(10%);
+        }
+
+        /* Lists and Items */
+        .item-list {
+            list-style: none;
+        }
+
+        .list-item {
+            margin-bottom: 25px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .item-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 850px) {
+            body {
+                display: block;
+            }
+            .wrapper {
+                flex-direction: column;
+            }
+            aside {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 30px;
+            }
+            .brand p {
+                margin-bottom: 20px;
+            }
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            nav ul li {
+                margin-bottom: 0;
+            }
+            main {
+                margin-left: 0;
+                padding: 30px;
+            }
+            .about-content {
+                flex-direction: column-reverse;
+            }
+            .profile-img {
+                width: 150px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside>
+            <div class="top-meta">
+                <div class="brand">
+                    <h1>Your Name</h1>
+                    <p>Your Title / Affiliation</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#teaching">Teaching</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-footer">
+                <p>&copy; 2026 Your Name.</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! Welcome to my academic profile. I am a researcher specializing in my field, exploring the intersections of core methodology and real-world impacts.</p>
+                        <p>My current focus involves developing robust frameworks, analyzing complex datasets, and collaborating with cross-disciplinary teams to solve pressing challenges.</p>
+                        <p>For a full academic history, you can view my <a href="#">Curriculum Vitae</a> or visit my <a href="#">Google Scholar</a>.</p>
+                    </div>
+                    <!-- Replace 'profile.jpg' with your image file path later -->
+                    <img src="profile.jpg" alt="Your Portrait" class="profile-img">
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research">
+                <h2>Research</h2>
+                <p>My research blends theoretical insights with practical implementation. Some primary directions include:</p>
+                <ul class="item-list">
+                    <li class="list-item">
+                        <div class="item-title">Core Focus Area One</div>
+                        <p>A brief description of this specific line of inquiry, detailing what methodologies you employ and the core problems you aim to address.</p>
+                    </li>
+                    <li class="list-item">
+                        <div class="item-title">Core Focus Area Two</div>
+                        <p>A short overview of another pillar of your research framework, highlighting recent milestones or application contexts.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Teaching Section -->
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <ul class="item-list">
+                    <li class="list-item">
+                        <div class="item-title">Course Name Placeholder (Graduate level)</div>
+                        <div class="item-meta">Term Year &bull; Institution Name</div>
+                        <p>A brief summary of what the course covers, key objectives, and links to materials if applicable.</p>
+                    </li>
+                    <li class="list-item">
+                        <div class="item-title">Course Name Placeholder (Undergraduate level)</div>
+                        <div class="item-meta">Term Year &bull; Institution Name</div>
+                        <p>A sentence or two detailing your instructional goals and student focus for this curriculum.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>The best way to reach me is via email, though you can also connect with me across various professional platforms.</p>
+                <p><strong>Email:</strong> <a href="mailto:your.email@domain.com">your.email@domain.com</a></p>
+                <p><strong>Profiles:</strong> <a href="#">LinkedIn</a> &bull; <a href="#">GitHub</a> &bull; <a href="#">Twitter/X</a></p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
