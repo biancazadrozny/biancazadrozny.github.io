@@ -43,7 +43,7 @@
             width: var(--sidebar-width);
             position: fixed;
             height: 100vh;
-            padding: 40px 30px;
+            padding: 30px 30px;
             border-right: 1px solid var(--border-color);
             display: flex;
             flex-direction: column;
@@ -52,10 +52,10 @@
 
         .brand h1 {
             font-size: 1.6rem;
-            font-weight: 800;
+            font-weight: 1000;
             margin-bottom: 5px;
             letter-spacing: -0.5px;
-            /*color: var(--link-color);*/
+            color: var(--link-color);
         }
 
         .brand p {
@@ -244,9 +244,8 @@
                     <div class="about-text">
                         <p>I am a currently a researcher associated with the <a href="https://www.puc-rio.br/sobrepuc/depto/institutos/ibia/">PUC-Behring AI Institute</a> and soon 
                             will join the <a href="https://www.inf.puc-rio.br/">Departamento de 
-                            Informática at PUC-Rio</a> as a full professor. My main area of focus is developing artificial intelligence methods that use geospatial data  
-                            for climate & sustainability applications. 
-<p>Previously I was a researcher and manager at IBM Research Brazil, where I led multiple 
+                            Informática at PUC-Rio</a> as a full professor.
+                        <p>Previously I was a researcher and manager at IBM Research Brazil, where I led multiple 
                             applied research projects in areas spanning from subsurface characterization for oil&gas and mining, to earth observation, weather, and climate problems.
                         <p>For a full academic and professional history, you can view my <a href="BiancaZadroznyCV.pdf">Curriculum Vitae</a>. 
                     </div>
@@ -258,18 +257,19 @@
             <!-- Research Section -->
             <section id="research">
                 <h2>Research</h2>
-                <p>My research blends theoretical insights with practical implementation. Some primary directions include:</p>
-                <ul class="item-list">
-                    <li class="list-item">
-                        <div class="item-title">Core Focus Area One</div>
-                        <p>A brief description of this specific line of inquiry, detailing what methodologies you employ and the core problems you aim to address.</p>
-                    </li>
-                    <li class="list-item">
-                        <div class="item-title">Core Focus Area Two</div>
-                        <p>A short overview of another pillar of your research framework, highlighting recent milestones or application contexts.</p>
-                    </li>
-                </ul>
-                or visit my <a href="https://scholar.google.com/citations?user=lSyUzLEAAAAJ&hl=pt-BR">Google Scholar</a>.</p>
+                <p> My main area of focus is developing and analyzing machine learning methods that use geospatial data  
+                            for climate & sustainability applications. Some research topics of current interest are: </p>
+                <ul>
+  <li><strong>Robustness:</strong> How can large models pre-trained on unlabeled geospatial data capture the different spectral, spatial, and temporal nuances required for various types of applications?</li>
+  <li><strong>Active Learning and Annotation Efficiency:</strong> How can we direct limited labeling efforts to maximize model performance?</li>
+  <li><strong>Imperfect Evaluation Data:</strong> How can we evaluate model quality and detect artifacts when labels are scarce or uncertain?</li>
+  <li><strong>Interpretability and Generalization:</strong> How can geospatial priors and physical models improve transparency and robustness?</li>
+  <li><strong>Benchmarking and Impact:</strong> How can evaluation metrics reflect real-world impact and enable a fair comparison between models?</li>
+  <li><strong>Local vs. Global Models:</strong> Should we strive for a single global models or multiple local specialists, and can we automatically identify the scopes for transferability?</li>
+  <li><strong>Multimodality:</strong> What are the benefits of multimodal pre-training for tasks that include multiple modalities, and what are the potential ways to incorporate additional data during the fine-tuning phase?</li>
+</ul>
+                
+               For a full list of papers please see my  <a href="https://scholar.google.com/citations?user=lSyUzLEAAAAJ&hl=pt-BR">Google Scholar</a>.</p>
                 
             </section>
 
